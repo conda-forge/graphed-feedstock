@@ -2,7 +2,7 @@
 schema_version: 1
 
 context:
-  version: "0.0.3"
+  version: "0.0.4"
 
 package:
   name: graphed
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/g/graphed/graphed-${{ version }}.tar.gz
-  sha256: 4d3a0d38d3f4111f3398cfda359464131708957d3df51bf903ec19c41c8c6574
+  sha256: 0b665cb16ab97c4fa80b915db711aa20ad51b41217786bc53b5d3dd10b41c29f
 
 build:
   number: 0
