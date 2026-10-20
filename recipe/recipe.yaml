@@ -2,7 +2,7 @@
 schema_version: 1
 
 context:
-  version: "0.0.8"
+  version: "0.0.9"
 
 package:
   name: graphed
@@ -10,10 +10,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/g/graphed/graphed-${{ version }}.tar.gz
-  sha256: 76e75890eefce48a7fc4eeba30ecfabd07e1455bb101d0e8e46bf14a1742e7b6
+  sha256: 6996a2b524d88a60e095d9211b657f07f3dd4b7f6a6124ed8ce6b5a79fa310c9
 
 build:
-  number: 2
+  number: 0
   # pyproject.toml pins `pyo3/abi3-py311`, so one limited-API build serves every CPython.
   skip: is_abi3 and not is_python_min
   python:
