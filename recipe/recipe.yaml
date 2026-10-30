@@ -32,7 +32,7 @@ requirements:
       then:
         - python
         - cross-python_${{ target_platform }}
-        - maturin >=1.9.4,<2
+        - maturin >=1.14,<2
     - ${{ compiler('c') }}
     - ${{ stdlib('c') }}
     - ${{ compiler('rust') }}
@@ -42,7 +42,7 @@ requirements:
     - if: is_abi3
       then: python-abi3
     - pip
-    - maturin >=1.9.4,<2
+    - maturin >=1.14,<2
   run:
     - python
     - executing >=2.0
