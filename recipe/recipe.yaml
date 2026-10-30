@@ -2,7 +2,7 @@
 schema_version: 1
 
 context:
-  version: "0.0.9"
+  version: "0.0.10"
 
 package:
   name: graphed
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/g/graphed/graphed-${{ version }}.tar.gz
-  sha256: 6996a2b524d88a60e095d9211b657f07f3dd4b7f6a6124ed8ce6b5a79fa310c9
+  sha256: dfdadf88580acf3636237ea54a8d7df2986959d02b9b9ecee928f9138fbd3932
 
 build:
   number: 0
@@ -32,7 +32,7 @@ requirements:
       then:
         - python
         - cross-python_${{ target_platform }}
-        - maturin >=1.9.4,<2
+        - maturin >=1.14,<2
     - ${{ compiler('c') }}
     - ${{ stdlib('c') }}
     - ${{ compiler('rust') }}
@@ -42,7 +42,7 @@ requirements:
     - if: is_abi3
       then: python-abi3
     - pip
-    - maturin >=1.9.4,<2
+    - maturin >=1.14,<2
   run:
     - python
     - executing >=2.0
